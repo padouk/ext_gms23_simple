@@ -5,16 +5,27 @@ namespace cli_gms23_simple
 {
 	static class PostBuildTasks
 	{
+		private static Task CopyOverwriteFile(string from, string to)
+		{
+			var directory = Path.GetDirectoryName(to);
+			if(!Directory.Exists(directory))
+			{
+				Directory.CreateDirectory(directory);
+			}
+
+			File.Copy(from, to, overwrite: true);
+
+			return Task.FromResult(0);
+		}
+
 		public static async Task Run(string solutionDir)
 		{
-			File.Copy(Path.Combine(solutionDir, "ext_gms23_simple_html5", "bin", "ext_gms23_simple_html5.js"), Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_html5.js"), overwrite:true);
-			File.Copy(Path.Combine(solutionDir, "ext_gms23_simple_html5", "bin", "ext_gms23_simple_html5.wasm"), Path.Combine(solutionDir, "gms", "datafiles", "ext_gms23_simple_html5.wasm"), overwrite: true);
-			File.Copy(Path.Combine(solutionDir, "ext_gms23_simple_macos64", "bin", "ext_gms23_simple_macos64.dylib"), Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_macos64.dylib"), overwrite: true);
-			File.Copy(Path.Combine(solutionDir, "ext_gms23_simple_ubuntu64", "bin", "ext_gms23_simple_ubuntu64.so"), Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_ubuntu64.so"), overwrite: true);
-			File.Copy(Path.Combine(solutionDir, "ext_gms23_simple_win32", "bin", "ext_gms23_simple_win32.dll"), Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_win32.dll"), overwrite: true);
-			File.Copy(Path.Combine(solutionDir, "ext_gms23_simple_win64", "bin", "ext_gms23_simple_win64.dll"), Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_win64.dll"), overwrite: true);
-
-			await Task.Yield();
+			await CopyOverwriteFile(Path.GetFullPath(Path.Combine(solutionDir, "ext_gms23_simple_html5", "bin", "ext_gms23_simple_html5.js")), Path.GetFullPath(Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_html5.js")));
+			await CopyOverwriteFile(Path.GetFullPath(Path.Combine(solutionDir, "ext_gms23_simple_html5", "bin", "ext_gms23_simple_html5.wasm")), Path.GetFullPath(Path.Combine(solutionDir, "gms", "datafiles", "ext_gms23_simple_html5.wasm")));
+			await CopyOverwriteFile(Path.GetFullPath(Path.Combine(solutionDir, "ext_gms23_simple_macos64", "bin", "ext_gms23_simple_macos64.dylib")), Path.GetFullPath(Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_macos64.dylib")));
+			await CopyOverwriteFile(Path.GetFullPath(Path.Combine(solutionDir, "ext_gms23_simple_ubuntu64", "bin", "ext_gms23_simple_ubuntu64.so")), Path.GetFullPath(Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_ubuntu64.so")));
+			await CopyOverwriteFile(Path.GetFullPath(Path.Combine(solutionDir, "ext_gms23_simple_win32", "bin", "ext_gms23_simple_win32.dll")), Path.GetFullPath(Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_win32.dll")));
+			await CopyOverwriteFile(Path.GetFullPath(Path.Combine(solutionDir, "ext_gms23_simple_win64", "bin", "ext_gms23_simple_win64.dll")), Path.GetFullPath(Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_win64.dll")));
 		}
 	}
 }
