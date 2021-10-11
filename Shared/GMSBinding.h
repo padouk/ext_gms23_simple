@@ -1,3 +1,6 @@
+#ifndef GMSBINDING_H
+#define GMSBINDING_H
+
 #if defined(GMS_PLATFORM_WINDOWS)
 #define EXTERN extern "C" __declspec(dllexport)
 #elif defined(GMS_PLATFORM_UWP)
@@ -13,6 +16,4 @@
 #define EXTERN
 #endif
 
-EXTERN double give_me_five(double five=5.0) {
-    return five;
-}
+#endif //GMSBINDING_H

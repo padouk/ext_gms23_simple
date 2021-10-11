@@ -20,16 +20,13 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Emscripten'" Label="Configuration">
     <ConfigurationType>JSApplication</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>emcc</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <EmscriptenDir>$(EMSCRIPTEN_SDK)</EmscriptenDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Emscripten'" Label="Configuration">
     <ConfigurationType>JSApplication</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>emcc</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
     <EmscriptenDir>$(EMSCRIPTEN_SDK)</EmscriptenDir>
   </PropertyGroup>
@@ -61,10 +58,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GMS_PLATFORM_HTML5;ENVIRONMENT_EMSCRIPTEN;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PreJsFile>GMSBinding.js</PreJsFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Emscripten'">
@@ -75,16 +74,26 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>GMS_PLATFORM_HTML5;ENVIRONMENT_EMSCRIPTEN;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PreJsFile>GMSBinding.js</PreJsFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Shared\give_me_five.cpp" />
+    <ClCompile Include="..\Shared\GMSBinding.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Shared\GMSBinding.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GMSBinding.js">
+      <FileType>Script</FileType>
+    </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

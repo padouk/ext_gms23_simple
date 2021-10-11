@@ -84,7 +84,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Shared\give_me_five.cpp" />
+    <ClCompile Include="..\Shared\GMSBinding.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Shared\GMSBinding.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

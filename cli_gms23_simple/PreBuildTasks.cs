@@ -11,7 +11,7 @@ namespace cli_gms23_simple
 			using (var externFunctionParserService = new ExternFunctionParserService(solutionDir))
 			using (var embeddedHandlerbarService = new EmbeddedHandlerbarService(solutionDir))
 			{
-				var externFunctions = await externFunctionParserService.Parse(Path.Combine("Shared", "give_me_five.cpp"));
+				var externFunctions = await externFunctionParserService.Parse(Path.Combine("Shared", "GMSBinding.cpp"));
 
 				var context = new {
 					ExtensionName = "gms23_simple",
@@ -20,6 +20,7 @@ namespace cli_gms23_simple
 
 				await embeddedHandlerbarService.RunFor(Path.Combine("gms", "extensions", "ext_gms23_simple", "ext_gms23_simple.yy"), context);
 				await embeddedHandlerbarService.RunFor(Path.Combine("gms", "scripts", "scr_gms23_simple_api", "scr_gms23_simple_api.gml"), context);
+				await embeddedHandlerbarService.RunFor(Path.Combine("ext_gms23_simple_html5", "GMSBinding.js"), context);
 			};
 		}
 	}

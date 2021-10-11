@@ -4,10 +4,23 @@
     <Filter Include="Shared">
       <UniqueIdentifier>{a6611f33-c58b-474c-bcbd-a903b12b6e10}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{8c8c2f5e-22bf-44f5-8cec-6ed4111abb59}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Shared\give_me_five.cpp">
+    <ClCompile Include="..\Shared\GMSBinding.cpp">
       <Filter>Shared</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Shared\GMSBinding.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GMSBinding.js">
+      <Filter>Generated</Filter>
+    </None>
   </ItemGroup>
 </Project>

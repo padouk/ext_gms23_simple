@@ -46,7 +46,10 @@
     <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <ItemGroup>
-    <ClCompile Include="..\Shared\give_me_five.cpp" />
+    <ClCompile Include="..\Shared\GMSBinding.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Shared\GMSBinding.h" />
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
