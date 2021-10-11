@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "cli_gms23_simple": {
+      "commandName": "Project",
+      "commandLineArgs": "--prebuild --postbuild $(SolutionDir)"
+    }
+  }
+}

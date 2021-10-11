@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ext_gms23_simple_ubuntu64", "ext_gms23_simple_ubuntu64\ext_gms23_simple_ubuntu64.vcxproj", "{88601C42-DEB8-4882-B7EF-8F09ABF881A8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ext_gms23_simple_win32", "ext_gms23_simple_win32\ext_gms23_simple_win32.vcxproj", "{1479BD46-4E60-4DCD-96A3-F078A28C0F55}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ext_gms23_simple_win64", "ext_gms23_simple_win64\ext_gms23_simple_win64.vcxproj", "{7B41B382-F589-4460-B96A-A3155CBDD473}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ext_gms23_simple_html5", "ext_gms23_simple_html5\ext_gms23_simple_html5.vcxproj", "{BD1A0166-C094-420E-A793-7AE1C818EE1B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ext_gms23_simple_macos64", "ext_gms23_simple_macos64\ext_gms23_simple_macos64.vcxproj", "{1F225BFB-DBDD-41BD-80DD-EB977D4760F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cli_gms23_simple", "cli_gms23_simple\cli_gms23_simple.csproj", "{284898AC-A30D-4DDA-9091-549ADBA4810E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gms", "gms\gms.vcxitems", "{9716FAFD-C7FA-45DA-B306-72E370C3A99F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|GMS2.3 = Debug|GMS2.3
+		Release|GMS2.3 = Release|GMS2.3
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88601C42-DEB8-4882-B7EF-8F09ABF881A8}.Debug|GMS2.3.ActiveCfg = Debug|x64
+		{88601C42-DEB8-4882-B7EF-8F09ABF881A8}.Debug|GMS2.3.Build.0 = Debug|x64
+		{88601C42-DEB8-4882-B7EF-8F09ABF881A8}.Release|GMS2.3.ActiveCfg = Release|x64
+		{1479BD46-4E60-4DCD-96A3-F078A28C0F55}.Debug|GMS2.3.ActiveCfg = Debug|Win32
+		{1479BD46-4E60-4DCD-96A3-F078A28C0F55}.Debug|GMS2.3.Build.0 = Debug|Win32
+		{1479BD46-4E60-4DCD-96A3-F078A28C0F55}.Release|GMS2.3.ActiveCfg = Release|Win32
+		{7B41B382-F589-4460-B96A-A3155CBDD473}.Debug|GMS2.3.ActiveCfg = Debug|x64
+		{7B41B382-F589-4460-B96A-A3155CBDD473}.Debug|GMS2.3.Build.0 = Debug|x64
+		{7B41B382-F589-4460-B96A-A3155CBDD473}.Release|GMS2.3.ActiveCfg = Release|x64
+		{BD1A0166-C094-420E-A793-7AE1C818EE1B}.Debug|GMS2.3.ActiveCfg = Debug|Emscripten
+		{BD1A0166-C094-420E-A793-7AE1C818EE1B}.Debug|GMS2.3.Build.0 = Debug|Emscripten
+		{BD1A0166-C094-420E-A793-7AE1C818EE1B}.Release|GMS2.3.ActiveCfg = Release|Emscripten
+		{1F225BFB-DBDD-41BD-80DD-EB977D4760F2}.Debug|GMS2.3.ActiveCfg = Debug|x64
+		{1F225BFB-DBDD-41BD-80DD-EB977D4760F2}.Debug|GMS2.3.Build.0 = Debug|x64
+		{1F225BFB-DBDD-41BD-80DD-EB977D4760F2}.Release|GMS2.3.ActiveCfg = Release|x64
+		{284898AC-A30D-4DDA-9091-549ADBA4810E}.Debug|GMS2.3.ActiveCfg = Debug|Any CPU
+		{284898AC-A30D-4DDA-9091-549ADBA4810E}.Debug|GMS2.3.Build.0 = Debug|Any CPU
+		{284898AC-A30D-4DDA-9091-549ADBA4810E}.Release|GMS2.3.ActiveCfg = Release|Any CPU
+		{284898AC-A30D-4DDA-9091-549ADBA4810E}.Release|GMS2.3.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D83A95F6-6152-4DB4-BE8E-80474D538C6E}
+	EndGlobalSection
+EndGlobal
