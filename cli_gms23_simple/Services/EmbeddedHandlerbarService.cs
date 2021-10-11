@@ -37,6 +37,8 @@ namespace cli_gms23_simple.Services
 			var dstPath = Path.GetFullPath(Path.Join(SolutionDir, dstRelativePath));
 			var template = await Compile(templateName);
 			var dstContent = template(handlebarsContext);
+
+			Console.WriteLine($"-> {dstPath}");
 			await File.WriteAllTextAsync(dstPath, dstContent);
 		}
 	}

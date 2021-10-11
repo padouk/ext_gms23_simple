@@ -42,6 +42,11 @@
         {"externalName":"{{Name}}","kind":1,"help":"","hidden":false,"returnType":{{#if IsReturnTypeNumber}}2{{else}}1{{/if}},"argCount":0,"args":[{{#each Arguments}}{{#if IsTypeNumber}}2{{else}}1{{/if}}{{#unless @last}}, {{/unless}}{{/each}}],"resourceVersion":"1.0","name":"_ext_{{../ExtensionName}}_{{Name}}","tags":[],"resourceType":"GMExtensionFunction",}{{#unless @last}},{{/unless}}
       {{/each}}
     ],"constants":[],"ProxyFiles":[],"copyToTargets":128,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
+      {"filename":"ext_{{ExtensionName}}_uwp64.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
+      {{#each ExternFunctions}}
+        {"externalName":"{{Name}}","kind":1,"help":"","hidden":false,"returnType":{{#if IsReturnTypeNumber}}2{{else}}1{{/if}},"argCount":0,"args":[{{#each Arguments}}{{#if IsTypeNumber}}2{{else}}1{{/if}}{{#unless @last}}, {{/unless}}{{/each}}],"resourceVersion":"1.0","name":"_ext_{{../ExtensionName}}_{{Name}}","tags":[],"resourceType":"GMExtensionFunction",}{{#unless @last}},{{/unless}}
+      {{/each}}
+    ],"constants":[],"ProxyFiles":[],"copyToTargets":35184372088832,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
   ],
   "classname": "",
   "tvosclassname": null,

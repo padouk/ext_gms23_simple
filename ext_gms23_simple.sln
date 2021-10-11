@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cli_gms23_simple", "cli_gms
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gms", "gms\gms.vcxitems", "{9716FAFD-C7FA-45DA-B306-72E370C3A99F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ext_gms23_simple_uwp64", "ext_gms23_simple_uwp64\ext_gms23_simple_uwp64.vcxproj", "{FA62834C-11E6-4E5E-9786-0B60C0B9D0AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|GMS2.3 = Debug|GMS2.3
@@ -42,6 +44,9 @@ Global
 		{284898AC-A30D-4DDA-9091-549ADBA4810E}.Debug|GMS2.3.Build.0 = Debug|Any CPU
 		{284898AC-A30D-4DDA-9091-549ADBA4810E}.Release|GMS2.3.ActiveCfg = Release|Any CPU
 		{284898AC-A30D-4DDA-9091-549ADBA4810E}.Release|GMS2.3.Build.0 = Release|Any CPU
+		{FA62834C-11E6-4E5E-9786-0B60C0B9D0AC}.Debug|GMS2.3.ActiveCfg = Debug|x64
+		{FA62834C-11E6-4E5E-9786-0B60C0B9D0AC}.Debug|GMS2.3.Build.0 = Debug|x64
+		{FA62834C-11E6-4E5E-9786-0B60C0B9D0AC}.Release|GMS2.3.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

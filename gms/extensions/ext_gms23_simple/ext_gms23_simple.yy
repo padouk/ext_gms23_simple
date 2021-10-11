@@ -32,6 +32,9 @@
     {"filename":"ext_gms23_simple_ubuntu64.so","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
         {"externalName":"give_me_five","kind":1,"help":"","hidden":false,"returnType":2,"argCount":0,"args":[2],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five","tags":[],"resourceType":"GMExtensionFunction",}
     ],"constants":[],"ProxyFiles":[],"copyToTargets":128,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
+      {"filename":"ext_gms23_simple_uwp64.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
+        {"externalName":"give_me_five","kind":1,"help":"","hidden":false,"returnType":2,"argCount":0,"args":[2],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five","tags":[],"resourceType":"GMExtensionFunction",}
+    ],"constants":[],"ProxyFiles":[],"copyToTargets":35184372088832,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
   ],
   "classname": "",
   "tvosclassname": null,

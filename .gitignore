@@ -9,3 +9,4 @@ obj
 /gms/extensions/ext_gms23_simple/ext_gms23_simple_win32.dll
 /gms/extensions/ext_gms23_simple/ext_gms23_simple_win64.dll
 /gms/scripts/scr_gms23_simple_api/scr_gms23_simple_api.gml
+/gms/extensions/ext_gms23_simple/ext_gms23_simple_uwp64.dll
