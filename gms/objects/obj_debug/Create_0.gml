@@ -1,0 +1,1 @@
+bid = buffer_create(4096, buffer_fixed, 1);

@@ -29,6 +29,8 @@ namespace cli_gms23_simple
 			await CopyOverwriteFile(Path.GetFullPath(Path.Combine(solutionDir, "ext_gms23_simple_win64", "bin", "ext_gms23_simple_win64.dll")), Path.GetFullPath(Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_win64.dll")));
 			await CopyOverwriteFile(Path.GetFullPath(Path.Combine(solutionDir, "ext_gms23_simple_uwp64", "bin", "ext_gms23_simple_uwp64.dll")), Path.GetFullPath(Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_uwp64.dll")));
 			await CopyOverwriteFile(Path.GetFullPath(Path.Combine(solutionDir, "ext_gms23_simple_operagx", "bin", "ext_gms23_simple_operagx.js")), Path.GetFullPath(Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_operagx.js")));
+
+			await CopyOverwriteFile(Path.GetFullPath(Path.Combine(solutionDir, "ext_gms23_simple_win64", "bin", "ext_gms23_simple_win64.pdb")), Path.GetFullPath(Path.Combine(solutionDir, "gms", "extensions", "ext_gms23_simple", "ext_gms23_simple_win64.pdb")));
 		}
 	}
 }

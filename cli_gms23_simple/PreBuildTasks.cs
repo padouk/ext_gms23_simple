@@ -19,6 +19,8 @@ namespace cli_gms23_simple
 				};
 
 				await embeddedHandlerbarService.RunFor(Path.Combine("gms", "extensions", "ext_gms23_simple", "ext_gms23_simple.yy"), context);
+				await embeddedHandlerbarService.RunFor(Path.Combine("gms", "extensions", "ext_gms23_simple", "ext_gms23_simple.gml"), context);
+
 				await embeddedHandlerbarService.RunFor(Path.Combine("gms", "scripts", "scr_gms23_simple_api", "scr_gms23_simple_api.gml"), context);
 				await embeddedHandlerbarService.RunFor(Path.Combine("ext_gms23_simple_html5", "GMSBinding.js"), context);
 				await embeddedHandlerbarService.RunFor(Path.Combine("ext_gms23_simple_operagx", "GMSBinding.js"), context);

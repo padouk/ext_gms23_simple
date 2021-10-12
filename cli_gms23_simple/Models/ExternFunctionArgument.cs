@@ -4,7 +4,7 @@
 	{
 		public ExternFunctionArgument(string typeCpp, string name, string defaultValue)
 		{
-			TypeCpp = typeCpp;
+			TypeCpp = typeCpp.Replace(" ", "");
 			Name = name;
 			DefaultValue = defaultValue;
 		}
@@ -14,5 +14,6 @@
 		public string DefaultValue { get; }
 
 		public bool IsTypeNumber => TypeCpp == "double";
+		public bool IsTypeBuffer => TypeCpp == "void*";
 	}
 }

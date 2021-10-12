@@ -24,6 +24,9 @@
         {"externalName":"give_me_five_as_string","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
             1,
           ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_as_string","tags":[],"resourceType":"GMExtensionFunction",},
+        {"externalName":"give_me_five_from_buffer","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
+            1,
+          ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_from_buffer","tags":[],"resourceType":"GMExtensionFunction",},
       ],"constants":[],"ProxyFiles":[],"copyToTargets":32,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"ext_gms23_simple_macos64.dylib","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
         {"externalName":"give_me_five","kind":1,"help":"","hidden":true,"returnType":2,"argCount":0,"args":[
@@ -32,6 +35,9 @@
         {"externalName":"give_me_five_as_string","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
             1,
           ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_as_string","tags":[],"resourceType":"GMExtensionFunction",},
+        {"externalName":"give_me_five_from_buffer","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
+            1,
+          ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_from_buffer","tags":[],"resourceType":"GMExtensionFunction",},
       ],"constants":[],"ProxyFiles":[],"copyToTargets":2,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"ext_gms23_simple_win64.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
         {"externalName":"give_me_five","kind":1,"help":"","hidden":true,"returnType":2,"argCount":0,"args":[
@@ -40,6 +46,9 @@
         {"externalName":"give_me_five_as_string","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
             1,
           ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_as_string","tags":[],"resourceType":"GMExtensionFunction",},
+        {"externalName":"give_me_five_from_buffer","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
+            1,
+          ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_from_buffer","tags":[],"resourceType":"GMExtensionFunction",},
       ],"constants":[],"ProxyFiles":[],"copyToTargets":64,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"ext_gms23_simple_win32.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
         {"externalName":"give_me_five","kind":1,"help":"","hidden":true,"returnType":2,"argCount":0,"args":[
@@ -48,6 +57,9 @@
         {"externalName":"give_me_five_as_string","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
             1,
           ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_as_string","tags":[],"resourceType":"GMExtensionFunction",},
+        {"externalName":"give_me_five_from_buffer","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
+            1,
+          ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_from_buffer","tags":[],"resourceType":"GMExtensionFunction",},
       ],"constants":[],"ProxyFiles":[],"copyToTargets":0,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"ext_gms23_simple_ubuntu64.so","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
         {"externalName":"give_me_five","kind":1,"help":"","hidden":true,"returnType":2,"argCount":0,"args":[
@@ -56,6 +68,9 @@
         {"externalName":"give_me_five_as_string","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
             1,
           ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_as_string","tags":[],"resourceType":"GMExtensionFunction",},
+        {"externalName":"give_me_five_from_buffer","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
+            1,
+          ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_from_buffer","tags":[],"resourceType":"GMExtensionFunction",},
       ],"constants":[],"ProxyFiles":[],"copyToTargets":128,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"ext_gms23_simple_uwp64.dll","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
         {"externalName":"give_me_five","kind":1,"help":"","hidden":true,"returnType":2,"argCount":0,"args":[
@@ -64,6 +79,9 @@
         {"externalName":"give_me_five_as_string","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
             1,
           ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_as_string","tags":[],"resourceType":"GMExtensionFunction",},
+        {"externalName":"give_me_five_from_buffer","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
+            1,
+          ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_from_buffer","tags":[],"resourceType":"GMExtensionFunction",},
       ],"constants":[],"ProxyFiles":[],"copyToTargets":35184372088832,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
     {"filename":"ext_gms23_simple_operagx.js","origname":"","init":"","final":"","kind":1,"uncompress":false,"functions":[
         {"externalName":"give_me_five","kind":1,"help":"","hidden":true,"returnType":2,"argCount":0,"args":[
@@ -72,6 +90,9 @@
         {"externalName":"give_me_five_as_string","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
             1,
           ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_as_string","tags":[],"resourceType":"GMExtensionFunction",},
+        {"externalName":"give_me_five_from_buffer","kind":1,"help":"","hidden":true,"returnType":1,"argCount":0,"args":[
+            1,
+          ],"resourceVersion":"1.0","name":"_ext_gms23_simple_give_me_five_from_buffer","tags":[],"resourceType":"GMExtensionFunction",},
       ],"constants":[],"ProxyFiles":[],"copyToTargets":17179869184,"order":[],"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMExtensionFile",},
   ],
   "classname": "",
