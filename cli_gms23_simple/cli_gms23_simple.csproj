@@ -3,17 +3,19 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <Configurations>Debug</Configurations>
+    <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="App_Data\Templates\ext_gms23_simple_html5\GMSBinding.js" />
+    <None Remove="App_Data\Templates\ext_gms23_simple_operagx\GMSBinding.js" />
     <None Remove="App_Data\Templates\gms\extensions\ext_gms23_simple\ext_gms23_simple.yy" />
     <None Remove="App_Data\Templates\gms\scripts\scr_gms23_simple_api\scr_gms23_simple_api.gml" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="App_Data\Templates\ext_gms23_simple_html5\GMSBinding.js" />
+    <EmbeddedResource Include="App_Data\Templates\ext_gms23_simple_operagx\GMSBinding.js" />
     <EmbeddedResource Include="App_Data\Templates\gms\extensions\ext_gms23_simple\ext_gms23_simple.yy" />
     <EmbeddedResource Include="App_Data\Templates\gms\scripts\scr_gms23_simple_api\scr_gms23_simple_api.gml" />
   </ItemGroup>
